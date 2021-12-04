@@ -1,0 +1,87 @@
+.circle {
+    width: 300px;
+    height: 300px;
+    background-color: brown;
+    transition: background-color 1s 1s, border-radius 1s;
+}
+
+.circle:hover {
+    background-color: aqua;
+    border-radius: 50%;
+}
+
+.sq {
+    width: 500px;
+    height: 540px;
+    background-color: purple;
+}
+
+.sq div {
+    width: 100px;
+    height: 100px;
+    margin: 10px 0px;
+    text-align: center;
+    background-color: plum;
+    transition: margin-left 3s, background-color 3s;
+}
+
+.sq:hover div {
+    margin-left: 500px;
+    background-color: blue;
+}
+
+div:nth-of-type(1) {
+    transition-timing-function: ease-in;
+}
+
+div:nth-of-type(2) {
+    transition-timing-function: ease-in-out;
+}
+
+div:nth-of-type(3) {
+    transition-timing-function: cubic-bezier(.29, 1.01, 1, -0.68);
+}
+
+div:nth-of-type(4) {
+    transition-timing-function: linear;
+}
+
+div:nth-of-type(5) {
+    transition-timing-function: steps(6, end);
+}
+
+.Quarter {
+    width: 700px;
+    height: 700px;
+}
+
+.Quarter div {
+    width: 100px;
+    height: 50px;
+    margin: 5px 0;
+    text-align: center;
+    background-color: coral;
+    border: 2px solid crimson;
+    display: block;
+    /* position: relative;
+    top: -100px; */
+}
+
+.Quarter span {
+    width: 10px;
+    height: 200px;
+    background-color: green;
+    margin: 5px 10px;
+    display: inline-block;
+}
+
+#quar {
+    transition: height 2s;
+}
+
+#quar:hover {
+    height: 25px;
+}
+
+
+/* .graph span {} */
